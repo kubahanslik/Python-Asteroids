@@ -67,8 +67,6 @@ class Game:
 
     def main(self):
         while True:
-            pg.display.set_caption(str(1000/self.clock.tick(Settings.FPS)))
-
             for event in pg.event.get():
                 if event.type == pg.QUIT:
                     exit()
